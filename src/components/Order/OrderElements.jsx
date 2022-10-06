@@ -14,53 +14,55 @@ export const OrderContainer = styled.div`
   align-items: center;
   height: inherit;
   padding: 20px;
+  
 `;
 
-export const Form = styled.div`
-  width: 100%;
-  padding: 20px;
-  border-radius: 6px;
-  background: #fff;
-  box-shadow: 0 0 30px 0 #e64752;
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 14px;
-  color: #666;
-  line-height: 22px;
+export const TextWrap = styled.div`
+  padding-top: 24px;
+
+`
+export const Heading = styled.h1`
+  margin-bottom: 24px;
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 600px;
+  text-align: center;
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+  }
 `;
-export const Banner = styled.div`
-  position: relative;
-  height: 100px;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+export const Subtitle = styled.p`
+  /* max-width: 440px; */
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 24px;
   text-align: center;
 `;
 
-export const BannerBackground = styled.img`
- 
-`;
+// export const OrderBg = styled.div`
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   overflow: hidden;
+//   opacity: 0.6;
+//   @media screen and (max-width: 1000px) {
+//     width: 100%;
+//     height: 100%;
+//   }
+// `;
 
-
-export const Heading = styled.h1``;
-
-export const Item = styled.div`
-  align-items: center;
-  position: relative;
-  margin: 10px 0;
-`;
-
-export const NameItem = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: calc(50% - 20px);
-`;
-
-export const Hero = styled.div`
-  transform-origin: 0 0 ;
-`
-
-export const HeroImg = styled.img`
-  
-`
+// export const ImgBg = styled.img`
+//   width: 100%;
+//   height: 100%;
+//   -o-object-fit: cover;
+//   object-fit: cover;
+//   background: #000;
+//   @media screen and (max-width: 1000px) {
+//     width: 100%;
+//     height: 100%;
+//   }
+// `;

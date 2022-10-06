@@ -13,6 +13,7 @@ import {
   Column1,
   Column2,
   ArrowRow,
+  ImgWrap
 } from "./ZonesElements";
 import CursorWhite from "../CursorWhite";
 import Map from "../../images/map.jpg";
@@ -50,7 +51,9 @@ const Zones = () => {
               </TextWrapper>
             </Column1>
             <Column2>
+            <ImgWrap>
               <MapImg src={Map} />
+              </ImgWrap>
             </Column2>
           </ZonesRow>
           <ArrowRow>

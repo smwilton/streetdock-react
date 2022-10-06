@@ -1,60 +1,45 @@
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { animateScroll as scroll } from 'react-scroll';
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
 import {
-  FooterContainer,
-  FooterWrap,
-  FooterLinkWrapper,
-  FooterLinkItems,
-  FooterLinkContainer,
-  FooterImg,
-  FooterLinkTitle,
-  FooterLink,
-  FooterLinkEmail,
-  FooterLinkAddress,
-  SocialIconLink,
-  SocialIcons,
-  SocialLogo,
-  SocialMedia,
-  SocialMediaWrap,
+  Container,
+  LogoDiv,
+  Logo,
+  EmailDiv,
+  SocialMediaDiv,
+  AddressDiv,
   WebsiteRights,
-  FooterImgLink,
+  SocialMediaLink
 } from "./FooterElements";
-import { animateScroll as scroll } from "react-scroll";
-import FooterImage from "../../images/streetdock-large-logo.png";
-
+import Image from "../../images/streetdock-large-logo.png";
 const Footer = () => {
   const toggleHome = () => {
     scroll.scrollToTop();
-  };
+  }
+ 
 
   return (
-    <FooterContainer id="contact">
-      <FooterWrap>
-        <FooterLinkContainer>
-          <FooterLinkWrapper>
-            <FooterImgLink
-              to="hero"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-80}
-            >
-              <FooterImg src={FooterImage} />
-            </FooterImgLink>
-            <FooterLinkItems>
-              <FooterLinkEmail to="/" className="email">
-                hello@streetdock.com
-              </FooterLinkEmail>
+    <Container id="contact">
+      <LogoDiv>
+        <Logo src={Image} to='/belfast' onClick={toggleHome} />
+      </LogoDiv>
+      <EmailDiv >hello@streetdock.com</EmailDiv>
+      <SocialMediaDiv>
+        <SocialMediaLink 
+        href="https://twitter.com/streetdock?lang=en" target="_blank" rel="noreferrer">
+        <FaTwitter />
+        </SocialMediaLink>
+        <SocialMediaLink href='https://www.linkedin.com/company/streetdock/about/' target="_blank" rel="noreferrer">
+        <FaLinkedin />
+        </SocialMediaLink>
+        <SocialMediaLink href='https://www.instagram.com/streetdock/' target="_blank" rel="noreferrer">
+        <FaInstagram />
+        </SocialMediaLink>
+        <br/>
+      <WebsiteRights>streetdock © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
 
-              <FooterLinkAddress>
-                3 Airport Road, Belfast Harbour Estate, Belfast BT3 9DY
-              </FooterLinkAddress>
-            </FooterLinkItems>
-          </FooterLinkWrapper>
-        </FooterLinkContainer>
-      </FooterWrap>
-    </FooterContainer>
+      </SocialMediaDiv>
+      <AddressDiv>3 Airport Road, <br/>Belfast Harbour Estate, <br/>Belfast BT3 9DY</AddressDiv>
+    </Container>
   );
 };
-
 export default Footer;

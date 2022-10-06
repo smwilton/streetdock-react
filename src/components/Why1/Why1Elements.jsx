@@ -49,7 +49,7 @@ export const TextWrapper = styled.div`
   padding-bottom: 60px;
 `;
 export const TopLine = styled.p`
-  color: #01bf71;
+  color: #e64752;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -63,7 +63,6 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600px;
-
   @media screen and (max-width: 480px) {
     font-size: 32px;
   }
@@ -73,7 +72,6 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-
 `;
 export const BtnWrap = styled.div`
   display: flex;

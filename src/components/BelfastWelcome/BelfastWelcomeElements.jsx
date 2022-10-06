@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
-import { Link as LinkS } from 'react-scroll'
+import { Link as LinkS } from "react-scroll";
 
 export const WelcomeContainer = styled.div`
   color: #000;
@@ -10,6 +10,7 @@ export const WelcomeContainer = styled.div`
   }
 `;
 export const WelcomeWrapper = styled.div`
+  margin-top: 100px;
   display: grid;
   z-index: 1;
   height: 860px;
@@ -35,6 +36,7 @@ export const WelcomeRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
+
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
   background-color: white;
@@ -51,15 +53,19 @@ export const ArrowRow = styled.div`
 `;
 
 export const Column1 = styled.div`
+  object-fit: contain;
   margin-bottom: 15px;
+  margin-top:50px;
   padding: 0 15px;
   grid-area: col1;
   color: #000;
   background-color: white;
   margin-left: 10%;
+  align-items: center;
 `;
 export const Column2 = styled.div`
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
+  margin-top:50px;
   padding: 0 15px;
   grid-area: col2;
   color: #000;
@@ -110,13 +116,13 @@ export const Button = styled.button`
 export const Image = styled.img`
   width: 100%;
   margin-top: 20%;
-  /* filter: blur(5px); */
+  filter: blur(5px);
 `;
 
 export const WhyLink = styled(LinkS)`
-  cursor: pointer; 
+  cursor: pointer;
   background-color: #fff;
-`
+`;
 
 export const VidWrap = styled.div`
   /* max-width: 555px; */
@@ -126,4 +132,5 @@ export const Vid = styled.video`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+  /* filter: blur(5px); */
 `;

@@ -108,7 +108,7 @@ export const Vid = styled.video`
 
 export const HowLink = styled(LinkS)`
   cursor: pointer; 
-  
+  float: right;
 `
 
 export const Image = styled.img`

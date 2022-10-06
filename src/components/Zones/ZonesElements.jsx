@@ -14,6 +14,7 @@ export const ZonesWrapper = styled.div`
   z-index: 1;
   height: 860px;
   width: 100% auto;
+  /* max-width: 1100px; */
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
@@ -25,11 +26,8 @@ export const ZonesRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
-  margin-right: 10%;
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
-  color: #fff;
-  background-color: #000;
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
@@ -41,21 +39,16 @@ export const ArrowRow = styled.div`
 
 export const Column1 = styled.div`
   margin-bottom: 15px;
+  margin-left: 10%;
   padding: 0 15px;
   grid-area: col1;
-  color: #fff;
-  background-color: #000;
-  margin-left: 10%;
 `;
 export const Column2 = styled.div`
   margin-bottom: 15px;
-  margin-left: 10%;
   margin-right: 10%;
+  /* margin-left: 10%; */
   padding: 0 15px;
   grid-area: col2;
-  color: #fff;
-  background-color: #000;
-  padding-right: 10%;
 `;
 
 export const TextWrapper = styled.div`
@@ -118,10 +111,14 @@ export const Button = styled.button`
   cursor: pointer;
 `;
 
-export const MapImg = styled.img`
-  width: 987px;
-  height: 555px;
-  /* margin-top: 10%; */
+export const ImgWrap = styled.div`
+  /* max-width: 555px; */
+  height: 100%;
+  padding-top: 10%;
+`;
 
+export const MapImg = styled.img`
+  width: 100%;
   margin: 0 0 10px 0;
+  padding-right: 0;
 `;

@@ -50,11 +50,9 @@ const Navbar = ({toggle}) => {
         <NavLogo to='/' onClick={toggleHome}>
         <img
               src={logo}
-              width="300"
-              height="80"
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
-              style={{color:"black", marginLeft:"50px"}}
+              style={{color:"black"}}
 
             />
         </NavLogo>

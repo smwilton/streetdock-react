@@ -1,24 +1,32 @@
 import styled from "styled-components";
-import PlayButton from '../../images/icons/play.svg'
+import PlayButton from "../../images/icons/play.svg";
 
 export const HeroContainer = styled.div`
+  /* flex: 1;
+  flex-direction: row;
+  align-items: stretch; */
+  
+  margin-top: 80px;
   background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px;
-  height: 780px;
+  height: 800px;
   position: relative;
   z-index: 100%;
+  width: 100vw;
+    height: 100vh;
 
-  /* Add: before styles */
+
   @media screen and (max-width: 1000px) {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
   }
 `;
 
 export const HeroBg = styled.div`
+
   position: absolute;
   top: 0;
   right: 0;
@@ -65,14 +73,14 @@ export const HeroH1 = styled.div`
     font-size: 80px;
   }
 
-  @media screen and (max-width: 480px){}
-`
+  @media screen and (max-width: 480px) {
+  }
+`;
 
-export const ArrowDown=styled.img`
+export const ArrowDown = styled.img`
   height: 100px;
-`
+`;
 export const HeroPlayButton = styled.button`
- 
   position: absolute;
   top: 80%;
   left: 25%;
@@ -84,17 +92,11 @@ export const HeroPlayButton = styled.button`
   background: transparent;
   color: white;
   font-size: 100px;
-`
-export const Controls = styled.div`
-  
-
-`
-export const Actions = styled.div`
-  
-
-`
+`;
+export const Controls = styled.div``;
+export const Actions = styled.div``;
 export const HeroMuteButton = styled.button`
-    position: absolute;
+  position: absolute;
   top: 80%;
   left: 75%;
   width: 74px;
@@ -105,5 +107,4 @@ export const HeroMuteButton = styled.button`
   background: transparent;
   color: white;
   font-size: 100px;
-  
-`
+`;

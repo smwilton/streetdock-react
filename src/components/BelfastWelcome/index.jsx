@@ -48,14 +48,23 @@ const BelfastWelcome = () => {
             </Column1>
             <Column2>
             <VidWrap>
-                <Vid autoPlay loop muted src={Video} />
+                <Vid autoPlay loop muted src={Image1} />
               </VidWrap>
             </Column2>
 
           </WelcomeRow>
-          <ArrowRow>
-     
-          </ArrowRow>
+          {/* <ArrowRow> */}
+          <WhyLink
+              to="why"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+            >
+              <CursorRed />
+              </WhyLink>
+          {/* </ArrowRow> */}
         </WelcomeWrapper>
       </WelcomeContainer>
     </>

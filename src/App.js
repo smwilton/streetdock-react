@@ -13,7 +13,6 @@ import OrderPage from "./pages/order";
 function App() {
  
  function ScrollToTop() {
-
     const { pathname } = useLocation();
     useEffect(() => {
       document.documentElement.scrollTo({

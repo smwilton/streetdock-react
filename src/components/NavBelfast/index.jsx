@@ -18,6 +18,7 @@ import { animateScroll as scroll } from "react-scroll";
 
 const NavBelfast = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
+
   const changeNav = () => {
     if (window.scrollY >= 80) {
       setScrollNav(true);

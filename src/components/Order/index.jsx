@@ -3,17 +3,28 @@ import Button from "react-bootstrap/Button";
 import { Container } from "react-bootstrap";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Image from "react-bootstrap/Image";
+
+import { Heading, Subtitle, TextWrap } from "./OrderElements";
 import Image1 from "../../images/hero.png";
-import { Banner, Hero, HeroImg } from "./OrderElements";
-import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
 
 const Order = () => {
   return (
     <Container
-      style={{ position: "center", marginTop: "100px", marginBottom: "50px" }}
+      style={{
+        position: "center",
+        marginTop: "100px",
+        marginBottom: "50px",
+        backgroundColor: "#fff",
+      }}
     >
-      <Form>
+      <TextWrap>
+        <Heading>StreetDock Delivery Request Form</Heading>
+        <Subtitle>
+          Fill in the form below to request a delivery. We will be in touch with
+          you as soon as we confirm your order and arrange payment.
+        </Subtitle>
+      </TextWrap>
+      <Form style={{ padding: "50px" }}>
         <Row className="mb-3">
           <h2>Contact Details</h2>
           <Form.Group as={Col} controlId="formGridName">
@@ -98,14 +109,9 @@ const Order = () => {
           </Form.Group>
         </Row>
 
-
-
-
-
-    
-        <Form.Group className="mb-3" id="formGridCheckbox">
+        {/* <Form.Group className="mb-3" id="formGridCheckbox">
           <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
+        </Form.Group> */}
 
         <Button variant="primary" type="submit">
           Submit

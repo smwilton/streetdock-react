@@ -4,7 +4,7 @@ import Order from '../components/Order'
 import Footer from "../components/Footer";
 const OrderPage = () => {
   return (
-    <div>
+    <div style={{backgroundColor: "#e64752"}}>
     <NavBelfast />
     <Order/>
     <Footer />
